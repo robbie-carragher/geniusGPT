@@ -9,6 +9,7 @@ import { useMutation } from '@tanstack/react-query';
 import { useState } from 'react';
 import toast from 'react-hot-toast';
 import { useAuth } from '@clerk/nextjs';
+import { supabase } from '@/utils/supabaseClient';  
 const Chat = () => {
   const { userId } = useAuth();
 

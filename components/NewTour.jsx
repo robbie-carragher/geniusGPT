@@ -10,6 +10,7 @@ import {
 import TourInfo from './TourInfo';
 import toast from 'react-hot-toast';
 import { useAuth } from '@clerk/nextjs';
+import { supabase } from '@/utils/supabaseClient';  
 const NewTour = () => {
   const queryClient = useQueryClient();
   const { userId } = useAuth();
