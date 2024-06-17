@@ -11,6 +11,20 @@ import TourInfo from './TourInfo';
 import toast from 'react-hot-toast';
 import { useAuth } from '@clerk/nextjs';
 import { supabase } from '@/utils/supabaseClient';  
+
+// Use supabase to fetch or manipulate data
+const fetchData = async () => {
+  const { data, error } = await supabase.from('your_table').select('*');
+  if (error) {
+    console.error('Error fetching data:', error);
+  } else {
+    console.log('Data:', data);
+  }
+};
+
+
+
+
 const NewTour = () => {
   const queryClient = useQueryClient();
   const { userId } = useAuth();
