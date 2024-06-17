@@ -11,10 +11,6 @@ import TourInfo from './TourInfo';
 import toast from 'react-hot-toast';
 import { useAuth } from '@clerk/nextjs';
 
-
-
-
-
 const NewTour = () => {
   const queryClient = useQueryClient();
   const { userId } = useAuth();
