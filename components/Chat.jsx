@@ -44,7 +44,8 @@ const Chat = () => {
   };
 
   return (
-    <div className='min-h-[calc(100vh-6rem)] grid grid-rows-[1fr,auto]'>
+    <div className='min-h-[calc(100vh-12rem)] sm:min-h-[calc(100vh-6rem)] grid grid-rows-[1fr,auto]'>
+    
       <div>
         {messages.map(({ role, content }, index) => {
           const avatar = role == 'user' ? '👤' : '🤖';
