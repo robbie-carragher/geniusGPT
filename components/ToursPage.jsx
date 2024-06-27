@@ -13,7 +13,7 @@ const ToursPage = () => {
   });
   return (
     <>
-      <form className='max-w-lg mb-12'>
+      <form className='max-w-lg mb-12 mt-24 sm:mt-0'>
         <div className='join w-full'>
           <input
             type='text'
